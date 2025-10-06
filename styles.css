@@ -1,1 +1,285 @@
-#boton-principal{background-color: blueviolet;}
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    background: #f7f7fa;
+    color: #222;
+}
+
+.header {
+    background: #8303c2;
+    color: #fff;
+    padding: 2rem 0 1rem 0;
+    text-align: center;
+}
+
+.header .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+.header .container img {
+    width: 110px;
+    height: 110px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.10);
+}
+.header .container h1,
+.header .container .subtitle {
+    text-align:justify;
+}
+.header .container h1 {
+    margin-bottom: 0.5rem;
+}
+.header .container > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#trama-header {
+    display: block;
+}
+.header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+    font-weight: 300;
+}
+
+.navbar {
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(248, 248, 249, 0.08);
+    margin-bottom: 3rem;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #8303c2;
+    font-weight: 500;
+    transition: color 0.2s;
+    font-size: 1.75rem;
+}
+
+.navbar a:hover {
+    color: #222;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+main section {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(95, 39, 205, 0.06);
+    margin-bottom: 2rem;
+    padding: 2rem 1.5rem;
+}
+
+main h2 {
+    color: #5f27cd;
+    margin-top: 0;
+}
+
+/* Cards y grids */
+.card {
+    background: #fff;
+    border-radius: 25px;
+    box-shadow: 0 4px 24px rgba(95, 39, 205, 0.10);
+    padding: 2rem 1.5rem;
+    margin-bottom: 1.5rem;
+    transition: transform 0.15s, box-shadow 0.15s;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    text-align: center;
+}
+
+.card:hover {
+    transform: translateY(-4px) scale(1.02);
+    box-shadow: 0 8px 32px rgba(95, 39, 205, 0.16);
+}
+
+.card h3 {
+    margin-top: 0;
+    color: #5f27cd;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.card-grid {
+    display:grid;
+    padding: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.titulos-clubes {
+    text-align: center;
+    color: #5f27cd;
+}
+
+/* Bootcamp features */
+.card-bootcamp {
+    background: linear-gradient(90deg, #f7f7fa 60%, #e3eaff 100%);
+}
+
+.bootcamp-features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.bootcamp-features .feature {
+    background: #48dbfb22;
+    color: #222;
+    border-radius: 8px;
+    padding: 0.7rem 1rem;
+    font-size: 1rem;
+    flex: 1 1 180px;
+    min-width: 160px;
+}
+
+#texto-centrado {
+    text-align: center;
+
+}
+
+/* Social cards */
+.social-cards {
+    gap: 1.5rem;
+}
+
+.card.social {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1.5rem 1rem;
+    text-decoration: none;
+    color: #222;
+    border: 2px solid #f0f0f0;
+    transition: border 0.2s, box-shadow 0.2s;
+}
+
+.card.social:hover {
+    border: 2px solid #5f27cd;
+    box-shadow: 0 8px 32px rgba(95, 39, 205, 0.18);
+    color: #5f27cd;
+}
+
+.card.social img {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 0.7rem;
+    filter: grayscale(0.2);
+}
+
+.card.social span {
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.card.social small {
+    color: #888;
+    font-size: 0.95rem;
+    margin-top: 0.2rem;
+}
+
+.card.social.instagram:hover {
+    color: #e1306c;
+    border-color: #e1306c;
+}
+
+.card.social.tiktok:hover {
+    color: #000;
+    border-color: #000;
+}
+
+.card.social.twitter:hover {
+    color: #1da1f2;
+    border-color: #1da1f2;
+}
+
+.card.social.linkedin:hover {
+    color: #0077b5;
+    border-color: #0077b5;
+}
+
+/* Listas limpias */
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    margin-bottom: 0.5rem;
+}
+
+@media (max-width: 700px) {
+    .card-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .bootcamp-features {
+        flex-direction: column;
+        gap: 0.7rem;
+    }
+}
+
+.footer {
+    background: #5f27cd;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+    font-size: 0.95rem;
+    letter-spacing: 1px;
+}
+
+@media (max-width: 700px) {
+    .navbar ul {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    main section {
+        padding: 1.2rem 0.5rem;
+    }
+
+    .container {
+        padding: 0 0.5rem;
+    }
+
+    .header .container {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .header h1 {
+        font-size: 1.5rem;
+    }
+}
