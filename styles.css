@@ -430,6 +430,88 @@ main section .card {
 
 #texto-centrado { justify-content: center; }
 
+/* ===== CARD PROPÓSITO ===== */
+.card-proposito {
+  background: linear-gradient(135deg, var(--purple-darkest), #6b21a8);
+  border-color: transparent;
+  padding: 1.75rem 2rem;
+  display: flex;
+  align-items: center;
+  gap: 1.75rem;
+  margin-bottom: 0;
+}
+
+.card-proposito:hover { border-color: transparent; }
+
+.proposito-label {
+  font-size: 0.67rem;
+  font-weight: 800;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.5);
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.proposito-text {
+  font-size: 1.05rem !important;
+  color: rgba(255,255,255,0.9) !important;
+  font-weight: 500;
+  line-height: 1.7 !important;
+  margin: 0;
+}
+
+/* ===== INTRO DE SECCIÓN ===== */
+.section-intro {
+  color: var(--text-muted);
+  font-size: 0.96rem;
+  line-height: 1.75;
+  margin: 0 0 1.5rem;
+}
+
+/* ===== CLUBS GRID ===== */
+.clubs-grid {
+  grid-template-columns: repeat(auto-fit, minmax(185px, 1fr));
+}
+
+.card.club.agro::before { background: linear-gradient(90deg, #8303c2, #16a34a); }
+
+/* ===== EVENTOS ===== */
+.eventos-grid {
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.card.evento { padding: 1.5rem 1.75rem; }
+
+.card.evento h3 {
+  font-size: 1.08rem;
+  font-weight: 700;
+  color: var(--purple-dark);
+  margin: 0 0 0.6rem;
+}
+
+.card.evento p {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  line-height: 1.75;
+}
+
+.evento-tag {
+  display: inline-block;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  padding: 0.22rem 0.65rem;
+  border-radius: 99px;
+  margin-bottom: 0.75rem;
+}
+
+.emprendedores-tag { background: rgba(245,158,11,0.12);  color: #b45309; }
+.agro-tag          { background: rgba(22,163,74,0.11);   color: #15803d; }
+.finanzas-tag      { background: rgba(16,185,129,0.11);  color: #047857; }
+.consultoria-tag   { background: rgba(59,130,246,0.12);  color: #1d4ed8; }
+
 /* ===== MIEMBROS ===== */
 .member-list-card ul {
   list-style: none;
@@ -622,6 +704,9 @@ main section .card {
   .card-grid { grid-template-columns: 1fr; gap: 0.85rem; }
   .bootcamp-features { grid-template-columns: 1fr; gap: 0.75rem; }
   .social-cards { grid-template-columns: repeat(2, 1fr); }
+  .clubs-grid   { grid-template-columns: 1fr; }
+  .eventos-grid { grid-template-columns: 1fr; }
+  .card-proposito { flex-direction: column; align-items: flex-start; gap: 0.5rem; padding: 1.4rem 1.25rem; }
 
   /* Scroll top */
   .scroll-top { bottom: 1.25rem; right: 1.25rem; width: 42px; height: 42px; font-size: 1rem; }
