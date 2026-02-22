@@ -4,45 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trama ITBA</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header class="header">
         <div class="container">
-            <img src="./12142120_453318948189787_2108998075_a.jpg" alt="">
-            <h1 id="trama-header">TRAMA ITBA</h1>
-            <p class="subtitle">Acercando el mundo profesional, tecnológico y emprendedor a los estudiantes universitarios desde 2012</p>
+            <img src="./12142120_453318948189787_2108998075_a.jpg" alt="Logo TRAMA ITBA">
+            <div class="header-text">
+                <h1 id="trama-header">TRAMA ITBA</h1>
+                <p class="subtitle">Acercando el mundo profesional, tecnológico y emprendedor a los estudiantes universitarios desde 2012</p>
+            </div>
         </div>
     </header>
 
     <nav class="navbar">
-        <ul>
-            <li><a href="#que-es">¿Qué es TRAMA?</a></li>
-            <li><a href="#clubes">Clubes</a></li>
-            <li><a href="#actividades">Actividades</a></li>
-            <li><a href="#bootcamp">Bootcamp</a></li>
-            <li><a href="#miembros">Miembros</a></li>
-            <li><a href="#redes">Redes</a></li>
-        </ul>
+        <div class="nav-inner container">
+            <span class="nav-brand">TRAMA</span>
+            <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+            <ul id="navMenu">
+                <li><a href="#que-es">¿Qué es TRAMA?</a></li>
+                <li><a href="#clubes">Clubes</a></li>
+                <li><a href="#actividades">Actividades</a></li>
+                <li><a href="#bootcamp">Bootcamp</a></li>
+                <li><a href="#miembros">Miembros</a></li>
+                <li><a href="#redes">Redes</a></li>
+            </ul>
+        </div>
     </nav>
 
     <main class="container">
         <section id="que-es">
-            <h2>¿Qué es TRAMA?</h2>
+            <div class="section-header">
+                <div class="section-icon">01</div>
+                <h2>¿Qué es TRAMA?</h2>
+            </div>
             <div class="card">
                 <p>TRAMA es una organización estudiantil fundada en 2012 en el Instituto Tecnológico de Buenos Aires (ITBA) con el objetivo principal de acercar el mundo profesional, tecnológico y emprendedor a los estudiantes universitarios.</p>
             </div>
         </section>
 
         <section id="clubes">
-            <h2>Estructura de la Organización</h2>
+            <div class="section-header">
+                <div class="section-icon">02</div>
+                <h2>Estructura de la Organización</h2>
+            </div>
             <div class="card-grid">
                 <div class="card club emprendedores">
                     <h3 class="titulos-clubes">Club de Emprendedores</h3>
                     <p>Encuentros con emprendedores exitosos.<br><strong>Evento principal:</strong> Bootcamp Trama</p>
                 </div>
-                <div class="card club finanzas y IT">
-                    <h3 class="titulos-clubes">Club de Finanzas y IT </h3>
+                <div class="card club finanzas">
+                    <h3 class="titulos-clubes">Club de Finanzas y IT</h3>
                     <p>Competencias de trading, crypto, challenges y charlas.Tambien enfocado en tecnologia. <br><strong>Evento principal:</strong> CryptoPall</p>
                 </div>
                 <div class="card club consultoria">
@@ -61,14 +78,20 @@
         </section>
 
         <section id="actividades">
-            <h2>Actividades</h2>
+            <div class="section-header">
+                <div class="section-icon">03</div>
+                <h2>Actividades</h2>
+            </div>
             <div class="card">
                 <p>Cada club organiza charlas, eventos, talleres y cursos para acercar su industria a los estudiantes y fomentar habilidades blandas.</p>
             </div>
         </section>
 
         <section id="bootcamp">
-            <h2>Bootcamp Trama</h2>
+            <div class="section-header">
+                <div class="section-icon">04</div>
+                <h2>Bootcamp Trama</h2>
+            </div>
             <div class="card card-bootcamp">
                 <p>El Bootcamp es un evento gratuito que promueve el emprendedorismo en estudiantes y jóvenes profesionales, reuniendo a unos 120 participantes de Argentina y América Latina.</p>
                 <div class="bootcamp-features">
@@ -81,13 +104,16 @@
         </section>
 
         <section id="miembros">
-            <h2>Perfil de los Miembros</h2>
+            <div class="section-header">
+                <div class="section-icon">05</div>
+                <h2>Perfil de los Miembros</h2>
+            </div>
             <div class="card-grid">
                 <div class="card">
                     <h3>¿A quién buscamos?</h3>
                     <p>Perfiles proactivos y de vocación emprendedora, dispuestos a desafiarse y crecer en un entorno de aprendizaje y desarrollo de proyectos de startup.</p>
                 </div>
-                <div class="card">
+                <div class="card member-list-card">
                     <h3>Requisitos</h3>
                     <ul>
                         <li>No se requieren conocimientos específicos ni ideas previas</li>
@@ -100,7 +126,10 @@
         </section>
 
         <section id="redes">
-            <h2>Redes Sociales</h2>
+            <div class="section-header">
+                <div class="section-icon">06</div>
+                <h2>Redes Sociales</h2>
+            </div>
             <div class="card-grid social-cards">
                 <a class="card social instagram" href="https://www.instagram.com/trama.itba/" target="_blank">
                     <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram"/>
@@ -123,6 +152,8 @@
             </div>
         </section>
     </main>
+
+    <button class="scroll-top" id="scrollTopBtn" aria-label="Volver arriba">↑</button>
 
     <footer class="footer">
         <div class="container">
