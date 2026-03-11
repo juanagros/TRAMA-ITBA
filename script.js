@@ -99,3 +99,44 @@ window.addEventListener('scroll', () => {
 scrollTopBtn.addEventListener('click', () => {
   window.scrollTo({ top: 0, behavior: 'smooth' });
 });
+
+/* ----- Lightbox for galleries ----- */
+function createLightbox() {
+  const overlay = document.createElement('div');
+  overlay.className = 'lightbox-overlay';
+  overlay.innerHTML = '<button class="lightbox-close" aria-label="Cerrar">✕</button><img src="" alt=""/>';
+  document.body.appendChild(overlay);
+  const img = overlay.querySelector('img');
+  const closeBtn = overlay.querySelector('.lightbox-close');
+
+  function open(src, alt) {
+    img.src = src;
+    img.alt = alt || '';
+    overlay.classList.add('visible');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function close() {
+    overlay.classList.remove('visible');
+    img.src = '';
+    document.body.style.overflow = '';
+  }
+
+  overlay.addEventListener('click', (e) => {
+    if (e.target === overlay || e.target === closeBtn) close();
+  });
+
+  document.addEventListener('keydown', (e) => { if (e.key === 'Escape') close(); });
+
+  return { open, close };
+}
+
+const lightbox = createLightbox();
+
+document.querySelectorAll('.photo-gallery img').forEach((thumb) => {
+  thumb.style.cursor = 'zoom-in';
+  thumb.addEventListener('click', () => {
+    // open the optimized image in the lightbox; if thumb src is a thumbnail, use its src
+    lightbox.open(thumb.src, thumb.alt);
+  });
+});
