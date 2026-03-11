@@ -430,6 +430,56 @@ main section .card {
 
 #texto-centrado { justify-content: center; }
 
+/* ===== AGROCONNECT ===== */
+.card-agroconnect {
+  background: linear-gradient(135deg, #fdf8ff 0%, #f3e8ff 60%, #ede9fe 100%);
+  border-color: rgba(131,3,194,0.14);
+}
+
+.card-agroconnect p {
+  font-size: 1.02rem;
+  color: var(--text);
+  margin-bottom: 0.5rem;
+}
+
+.agroconnect-features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(195px, 1fr));
+  gap: 0.9rem;
+  margin-top: 1.5rem;
+}
+
+.agroconnect-features .feature {
+  background: rgba(255,255,255,0.8);
+  border: 1px solid rgba(131,3,194,0.12);
+  border-radius: 12px;
+  padding: 0.95rem 1.1rem;
+  font-size: 0.88rem;
+  color: var(--text);
+  font-weight: 500;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.55rem;
+  line-height: 1.5;
+  backdrop-filter: blur(4px);
+  transition: background var(--transition), box-shadow var(--transition);
+}
+
+.agroconnect-features .feature:hover {
+  background: rgba(255,255,255,0.97);
+  box-shadow: 0 4px 16px rgba(131,3,194,0.10);
+}
+
+.agroconnect-features .feature::before {
+  content: '✦';
+  color: var(--purple-main);
+  font-size: 0.65rem;
+  margin-top: 0.3rem;
+  flex-shrink: 0;
+}
+
+#texto-centrado { justify-content: center; }
+
 /* ===== GALERÍA DE FOTOS (Bootcamp / AgroConnect) ===== */
 .photo-gallery {
   display: grid;
