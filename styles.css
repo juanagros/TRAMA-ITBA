@@ -482,25 +482,25 @@ main section .card {
 
 
 /* ===== FINNACE FESTIVAL ===== */
-.card-finance-festival {
+.card-Finance-Festival {
   background: linear-gradient(135deg, #fdf8ff 0%, #f3e8ff 60%, #ede9fe 100%);
   border-color: rgba(131,3,194,0.14);
 }
 
-.card-finance-festival p {
+.card-Finance-Festival p {
   font-size: 1.02rem;
   color: var(--text);
   margin-bottom: 0.5rem;
 }
 
-.finance-festival-features {
+.Finance-Festival-features {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(195px, 1fr));
   gap: 0.9rem;
   margin-top: 1.5rem;
 }
 
-.finance-festival-features .feature {
+.Finance-Festival-features .feature {
   background: rgba(255,255,255,0.8);
   border: 1px solid rgba(131,3,194,0.12);
   border-radius: 12px;
@@ -516,12 +516,12 @@ main section .card {
   transition: background var(--transition), box-shadow var(--transition);
 }
 
-.finance-festival-features .feature:hover {
+.Finance-Festival-features .feature:hover {
   background: rgba(255,255,255,0.97);
   box-shadow: 0 4px 16px rgba(131,3,194,0.10);
 }
 
-.finance-festival-features .feature::before {
+.Finance-Festival-features .feature::before {
   content: '✦';
   color: var(--purple-main);
   font-size: 0.65rem;
